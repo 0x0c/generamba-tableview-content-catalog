@@ -37,7 +37,7 @@ final class {{ module_info.name }}Presenter {
 }
 
 extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterInput {
-    var sections: [Section] {
+    var sections: [any Sectionable] {
         return interactor.sections
     }
 
@@ -45,11 +45,11 @@ extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterInput 
         // TODO: Implement if needed
     }
 
-    func section(for sectionIndex: Int) -> Section {
+    func section(for sectionIndex: Int) -> Sectionable {
         return interactor.section(for: sectionIndex)
     }
 
-    func didItemSelect(indexPath: IndexPath) {
+    func didSelectRow(at indexPath: IndexPath) {
         // TODO:
     }
 }

@@ -23,7 +23,7 @@ final class {{ module_info.name }}Interactor {
     weak var presenter: {{ module_info.name }}InteractorOutput!
 
     // MARK: Stored instance properties
-    var sections: [Section] = []
+    var sections: [any Sectionable] = []
 
     // MARK: Computed instance properties
 

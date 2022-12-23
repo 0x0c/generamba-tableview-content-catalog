@@ -47,13 +47,13 @@ final class {{ module_info.name }}ViewController: UIViewController {
 }
 
 extension {{ module_info.name }}ViewController: SectionProvider {
-    var sections: [Section] {
+    var sections: [any Sectionable] {
         return presenter.sections
     }
 }
 
 extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
-    func update(sections: [Section]) {
+    func update(sections: [any Sectionable]) {
         // TODO:
     }
 }
