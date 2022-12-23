@@ -31,8 +31,9 @@ final class {{ module_info.name }}ViewController: UIViewController {
         tableView = UITableView(frame: .zero, style: .insetGrouped)
         view.addSubview(tableView)
         prepareConstraints()
-        provider = self
+
         // TODO: Set data source and delegate
+
         presenter.viewDidLoad()
     }
 
